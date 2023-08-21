@@ -1,0 +1,21 @@
+{
+  "name": "rur",
+  "version": "0.2.2",
+  "description": "client-side router",
+  "main": "build/node/router.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel src/ --out-dir build/node/",
+    "dev": "babel src/ --out-dir build/node/ --watch --source-maps inline",
+    "test": "mocha --require babel/register",
+    "coverage": "istanbul cover _mocha -- --require babel/register"
+  },
+  "author": "cztomsik",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "5.8.34",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {}
+}

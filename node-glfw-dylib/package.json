@@ -1,0 +1,20 @@
+{
+  "name": "glfw-dylib",
+  "version": "3.3.2",
+  "description": "download glfw dynamic library from their official release channel",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node postinstall",
+    "test": "node test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "ffi-napi": "^2.4.6"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.14",
+    "node-fetch": "^2.6.0"
+  }
+}

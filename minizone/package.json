@@ -1,0 +1,17 @@
+{
+  "name": "minizone",
+  "version": "1.0.0",
+  "description": "Zones using async_hooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "node -r esm -r '.' test/test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {
+    "esm": "^3.0.22"
+  }
+}

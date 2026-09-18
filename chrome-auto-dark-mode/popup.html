@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 220px;
+      padding: 12px;
+      font-family: system-ui, sans-serif;
+      margin: 0;
+    }
+    h3 {
+      margin: 0 0 8px;
+      font-size: 13px;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      font-size: 13px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #f0f0f0;
+      transition: background 0.15s;
+      margin-bottom: 4px;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+    button.active {
+      background: #333;
+      color: #fff;
+      border-color: #333;
+    }
+    .divider {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 10px 0;
+    }
+    .page-url {
+      font-size: 11px;
+      color: #888;
+      margin: 0 0 6px;
+      word-break: break-all;
+    }
+    .page-status {
+      font-size: 11px;
+      color: #666;
+      margin-top: 2px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h3>Global</h3>
+  <button id="globalBtn">Enable All Pages</button>
+
+  <hr class="divider">
+
+  <h3>This Page</h3>
+  <div class="page-url" id="pageUrl"></div>
+  <button id="pageOn">Turn On</button>
+  <button id="pageOff">Turn Off</button>
+  <button id="pageAuto">Auto (follow global)</button>
+  <div class="page-status" id="pageStatus"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
